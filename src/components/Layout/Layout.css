@@ -1,0 +1,175 @@
+@import '../variables.css';
+
+
+/*
+ * ========================================
+ * Main
+ * ========================================
+ */
+
+html {
+  background: none;
+}
+
+body {
+  margin: 0;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+
+/*
+ * ========================================
+ * Browser
+ * ========================================
+ */
+
+:global(.browserupgrade) {
+  padding: 0;
+  color: #000;
+  margin: 0;
+  background: none;
+}
+
+
+/*
+ * ========================================
+ * Links
+ * ========================================
+ */
+
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+}
+
+
+/*
+ * ========================================
+ * Selections
+ * ========================================
+ */
+
+ ::-moz-selection, {
+  background: none;
+  text-shadow: none;
+}
+
+::selection {
+  background: none;
+  text-shadow: none;
+}
+
+
+/*
+ * ========================================
+ * Forms
+ * ========================================
+ */
+
+ form,
+ input,
+ textarea,
+ form:focus,
+ input:focus,
+ textarea:focus {
+   margin: 0;
+   padding: 0;
+   border: none;
+   outline: none;
+   box-shadow: none;
+ }
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+
+/*
+ * ========================================
+ * Media
+ * ========================================
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+
+/*
+ * ========================================
+ * Typohraphy
+ * ========================================
+ */
+
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ p,
+ span {
+   margin: 0;
+   padding: 0;
+   font-family: var(--Font);
+   font-weight: 100;
+ }
+ 
+ h1 {
+   font-size: 66px;
+   line-height: 56px;
+ }
+ 
+ h2 {
+   font-size: 44px;
+   line-height: 40px;
+ }
+ 
+ h3 {
+   font-size: 33px;
+   line-height: 32px;
+ }
+ 
+ h4 {
+   font-size: 22px;
+   line-height: 24px;
+ }
+ 
+ h5 {
+   font-size: 16px;
+   line-height: 20px;
+ }
+ 
+ h6 {
+   font-size: 14px;
+   line-height: 18px;
+ }
+ 
+ p,
+ span {
+   font-size: 11px;
+   line-height: 16px;
+ } 

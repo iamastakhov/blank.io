@@ -1,0 +1,125 @@
+@import '../../../../components/variables.css';
+
+
+.Block {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  min-width: var(--Size04);
+  max-width: var(--Size04);
+}
+
+.Container {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 8px;
+  padding: 0;
+  border-radius: 0;
+}
+
+.Content .Title,
+.Content .Description {
+  display: block;
+  width: auto;
+  margin: 0;
+  padding: 24px;
+}
+
+.Content .Title {
+  padding-bottom: 16px;
+  color: var(--ColorBrand);
+}
+
+.Content .Title a {
+  text-decoration: underline;
+  color: var(--ColorBrand);
+}
+
+.Content .Title:hover a {
+  text-decoration: none;
+}
+
+.Content .Description {
+  padding: 0 24px 16px 24px;
+  color: var(--ColorWhiteAlpha);
+}
+
+.Divider {
+  margin: 0 24px;
+  background: var(--ColorBrand);
+}
+
+.Meta {
+  display: block;
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.Meta .Left {
+  display: block;
+  position: relative;
+  width: auto;
+  float: left;
+  margin: 0;
+  padding: 0 8px;
+}
+
+.Meta .Right {
+  display: block;
+  position: relative;
+  width: auto;
+  float: right;
+  margin: 0;
+  padding: 8px;
+}
+
+.Button {
+  display: inline-block;
+  margin: 0;
+  padding: 16px;
+}
+
+.Button .Title,
+.Button .Glyph,
+.Button .Avatar {
+  display: inline-block;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  color: var(--ColorWhiteAlpha);
+}
+
+.Button:hover .Title,
+.Button:hover .Glyph,
+.Button:hover .Avatar {
+  color: var(--ColorBrand);
+}
+
+.Button .Title {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.Button .Glyph {
+  margin-top: 2px;
+}
+
+.Button .Glyph.Right {
+  margin-left: 16px !important;
+} 
+
+.Button .Avatar {
+  border-radius: 16px;
+  margin: -8px;
+  width: 32px;
+  height: 32px;
+}
+
+.Button .Avatar.Left {
+  margin-right: 16px;
+  margin-left: 0;
+}

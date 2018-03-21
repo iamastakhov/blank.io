@@ -1,0 +1,129 @@
+@import '../../../../../../components/variables.css';
+
+
+.Block {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  min-width: var(--Size03);
+  max-width: var(--Size06);
+}
+
+.Container {
+  position: relative;
+  display: block;
+  overflow: visible;
+  margin: 8px;
+  padding: 0;
+  border-radius: 12px;
+}
+
+.Title {
+  display: block;
+  width: auto;
+  margin: 0;
+  padding: 24px;
+}
+
+.Title {
+  padding-bottom: 16px;
+  color: var(--ColorBrand);
+}
+
+.Divider {
+  margin: 0 24px;
+  background: var(--ColorBrand);
+}
+
+.Form {
+  margin: 0;
+  padding: 16px 24px 0;
+}
+
+.Form .Input,
+.Form .Textarea {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 8px 0;
+  color: var(--ColorBlackAlpha);
+  border-bottom: 1px solid;
+  border-color: var(--ColorBlackAlpha);
+  background: none;
+}
+
+.Textarea {
+  resize: none;
+}
+
+.Meta {
+  display: block;
+  width: 100%;
+  height: 80px;
+  margin: 0;
+  padding: 0;
+  float: none;
+}
+
+.Left {
+  float: left;
+}
+
+.Right {
+  float: right;
+}
+
+.Button {
+  display: inline-block;
+  width: auto;
+  margin: 0;
+  padding: 24px;
+  background: none;
+}
+
+
+.Button .Title,
+.Button .Glyph {
+  display: inline-block;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  color: var(--ColorBlackAlpha);
+}
+
+.Button .Glyph {
+  margin-top: -2px;
+  margin-right: 16px;
+}
+
+.Button:hover .Title,
+.Button:hover .Glyph {
+  color: var(--ColorBrand);
+}
+
+.Background.Color {
+  z-index: -80;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 8px;
+  background: var(--ColorWhite);
+}
+
+.Background.Shadow {
+  z-index: -90;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 8px;
+  box-shadow: var(--Shadow);
+}
+

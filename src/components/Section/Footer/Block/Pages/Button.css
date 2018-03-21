@@ -1,0 +1,39 @@
+@import '../../../../variables.css';
+
+
+.Button {
+  display: inline-block;
+  width: auto;
+  margin: 0;
+  padding: 24px 16px;
+}
+
+.Button .Title {
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--ColorWhiteAlpha);
+}
+
+.Button .Glyph {
+  display: inline-block;
+  margin-right: 16px;
+}
+
+.Button:hover .Title {
+  color: var(--ColorWhite);
+}
+
+.ButtonActive .Title,
+.ButtonActive .Glyph {
+  color: var(--ColorBrand);
+}
+
+.ButtonActive:hover {
+  cursor: default;
+}
+
+.ButtonActive:hover .Title,
+.ButtonActive .Glyph {
+  color: var(--ColorBrand);
+}

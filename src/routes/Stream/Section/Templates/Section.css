@@ -1,0 +1,17 @@
+@import '../../../../components/variables.css';
+
+/* Layout =================================================================== */
+
+.Section {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+/* Color ==================================================================== */
+
+.Container {
+  max-width: var(--Size09);
+  margin: 0 auto;
+}

@@ -1,0 +1,81 @@
+:root {
+
+  /*
+   * Layout
+   * ======================================================================== */
+
+   --Size01: 128px;
+   --Size02: 256px;
+   --Size03: 384px;
+   --Size04: 512px;
+   --Size05: 640px;
+   --Size06: 768px;                              /* Extra Small - Phone        */
+   --Size07: 896px;
+   --Size08: 1024px;
+   --Size09: 1152px;                             /* Small       - Tablet       */
+   --Size10: 1280px;
+   --Size11: 1408px;
+   --Size12: 1536px;                             /* Medium      - Laptop       */
+   --Size13: 1664px;
+   --Size14: 1792px;
+   --Size15: 1920px;                             /* Large       - Desktop      */
+   --Size16: 2048px;
+   --Size17: 2176px;
+   --Size18: 2304px;                             /* Extra Large - Desktop Wide */
+   --Size19: 2432px;
+   --Size20: 2560px;
+ 
+   /*
+    * Typography
+    * ======================================================================== */
+ 
+   --Font: 'HelveticaNeue-Light', sans-serif;
+ 
+   /*
+    * Colors
+    * ======================================================================== */
+ 
+   --ColorBrand: rgb(255, 32, 32);                                  /* #?????? */
+ 
+   --ColorBlack: rgb(0, 0, 0);                                      /* #000000 */
+   --ColorDark: rgb(64, 64, 64);                                    /* #404040 */
+   --ColorGrey: rgb(128, 128, 128);                                 /* #808080 */
+   --ColorLight: rgb(192, 192, 192);                                /* #C0C0C0 */
+   --ColorWhite: rgb(255, 255, 255);                                /* #FFFFFF */
+ 
+   --ColorBlackAlpha: rgba(0, 0, 0, 0.5);    
+   --ColorWhiteAlpha: rgba(255, 255, 255, 0.5);  
+ 
+   --Color000: rgb(0, 0, 0);
+   --Color016: rgb(16, 16, 16);
+   --Color032: rgb(32, 32, 32);
+   --Color048: rgb(48, 48, 48);
+   --Color064: rgb(64, 64, 64);
+   --Color128: rgb(128, 128, 128);
+   --Color192: rgb(192, 192, 192);
+   --Color208: rgb(208, 208, 208);
+   --Color224: rgb(224, 224, 224);
+   --Color240: rgb(240, 240, 240);
+   --Color256: rgb(255, 255, 255);
+ 
+   /*
+    * Gradients
+    * ======================================================================== */
+ 
+   --GradientBrand: linear-gradient(45deg, rgb(128, 32, 32), rgb(255, 32, 32));
+   --GradientDark: linear-gradient(45deg, rgb(0, 0, 0), rgb(32, 32, 32));
+   --GradientDarkTop: linear-gradient(0deg, rgb(0, 0, 0), rgb(32, 32, 32));
+   --GradientDarkBottom: linear-gradient(180deg, rgb(0, 0, 0), rgb(32, 32, 32));
+
+   --GradientLight: linear-gradient(45deg, rgb(255, 255, 255), rgb(224, 224, 224));
+   --GradientLightTop: linear-gradient(0deg, rgb(255, 255, 255), rgb(224, 224, 224));
+   --GradientLightBottom: linear-gradient(180deg, rgb(255, 255, 255), rgb(224, 224, 224));
+
+ 
+   /*
+    * Shadows
+    * ======================================================================== */
+ 
+   --Shadow: 0 0 16px 0 rgba(0, 0, 0, 0.16);
+
+}

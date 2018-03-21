@@ -1,0 +1,30 @@
+@import '../../../../variables.css';
+
+
+.Block {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.Container {
+  margin: 0;
+  padding: 8px 16px;
+}
+
+.Button {
+  display: inline-block;
+  width: auto;
+  margin: 0;
+  padding: 24px 16px;
+}
+
+.Button .Glyph {
+  display: inline-block;
+  margin-right: 16px;
+  color: var(--ColorBrand);
+}
+
+.Button:hover .Glyph {
+  color: var(--ColorWhite);
+}

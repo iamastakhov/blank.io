@@ -1,0 +1,75 @@
+@import '../../../../variables.css';
+
+
+.Block {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.Container {
+  margin: 0;
+  padding: 8px 16px;
+}
+
+.Button {
+  display: inline-block;
+  width: auto;
+  margin: 0;
+  padding: 24px 16px;
+  background: none;
+}
+
+.Button .Title {
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--ColorWhiteAlpha);
+}
+
+.Button .Glyph {
+  display: inline-block;
+  margin-left: 16px;
+  color: var(--ColorWhiteAlpha);
+}
+
+.Button:hover .Title,
+.Button:hover .Glyph {
+  color: var(--ColorWhite);
+}
+
+.Block:hover .Button .Title,
+.Block:hover .Button .Glyph {
+  color: var(--ColorWhite);
+}
+
+.Menu {
+  position: absolute;
+  display: none;
+  margin: 0;
+  padding: 8px 0;
+  overflow: hidden;
+  border-radius: 4px;
+  box-shadow: none;
+  background: var(--ColorWhite);
+}
+
+.Block:hover .Menu {
+  display: block;
+  width: auto;
+}
+
+.Block:hover .Menu .Button {
+  padding: 16px 24px;
+  display: block;
+  text-transform: uppercase;
+}
+
+.Block:hover .Menu .Button .Title {
+  color: var(--ColorBlackAlpha);
+}
+
+.Block:hover .Menu .Button:hover .Title {
+  color: var(--ColorBlack);
+}
+
