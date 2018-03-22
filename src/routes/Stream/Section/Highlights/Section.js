@@ -15,15 +15,15 @@ import Highlight2 from './Block/Highlight2/Block';
 import Highlight3 from './Block/Highlight3/Block';
 
 
-import VideoUrl from './Block/Highlight1/Video.mp4';
-import ImageUrl from './Block/Highlight2/Image.jpg';
+import VideoUrl from './Video.mp4';
+import ImageUrl from './Image.jpg';
 
 
 class Section extends React.Component {
 
 
-state = { slideIndex: 0 };
-
+    state = { slideIndex: 0 };
+    
 
 render() {
 return (
@@ -34,12 +34,18 @@ return (
 <div className={s.Container}>
 
 
-  <Highlight1 />
-  <video className={cx(s.Background, s.Video)} src={VideoUrl} type="video/mp4" loop autoPlay />
-  <div className={cx(s.Background, s.Color)} />
-  
+    <Highlight1 />
+    <Highlight2 />
+    <Highlight3 />
+
 
 </div>
+
+
+    <div className={cx(s.Background, s.Overlay)} />
+    <video className={cx(s.Background, s.Video)} src={VideoUrl} type="video/mp4" loop autoPlay />
+
+
 </Slide>
 
 
@@ -47,12 +53,17 @@ return (
 <div className={s.Container}>
 
 
-  <Highlight2 />
-  <img className={cx(s.Background, s.Image)} src={ImageUrl} />
-  <div className={cx(s.Background, s.Color)} />
+    <Highlight1 />
+    <Highlight2 />
 
 
 </div>
+
+
+    <div className={cx(s.Background, s.Overlay)} />
+    <img className={cx(s.Background, s.Image)} src={ImageUrl} />
+
+
 </Slide>
 
 
@@ -60,11 +71,15 @@ return (
 <div className={s.Container}>
 
 
-  <Highlight3 />
-  <div className={cx(s.Background, s.Color)} />
+    <Highlight3 />
 
 
 </div>
+
+
+    <div className={cx(s.Background, s.Color)} />
+
+
 </Slide>
 
 

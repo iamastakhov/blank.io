@@ -13,7 +13,7 @@ import Secondary from '../../components/Section/Secondary/Stream'
 
 
 import Highlights from './Section/Highlights/Section'
-import Templates from './Section/Templates/Section'
+import Posts from './Section/Posts/Section'
 
 
 class Page extends React.Component {
@@ -43,7 +43,7 @@ return (
   </CarouselProvider>
 
 
-  <Templates />
+  <Posts />
 
 
 </div>

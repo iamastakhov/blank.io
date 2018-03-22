@@ -15,8 +15,8 @@ import Ad2 from './Block/Ad2/Block';
 import Ad3 from './Block/Ad3/Block';
 
 
-import VideoUrl from './Block/Ad1/Video.mp4';
-import ImageUrl from './Block/Ad2/Image.jpg';
+import VideoUrl from './Video.mp4';
+import ImageUrl from './Image.jpg';
 
 
 class Section extends React.Component {

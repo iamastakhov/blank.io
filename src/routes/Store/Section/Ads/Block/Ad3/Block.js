@@ -6,18 +6,14 @@ import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from '../../Block.css';
 
 
-import Link from '../../../../../../components/Link';
-
-
-import { FaTwitter } from 'react-icons/lib/fa';
+import { FaInstagram, FaDollar, FaEur } from 'react-icons/lib/fa';
 
 
 import AuthorUrl from './Image.png';
+import ThumbnailUrl from './Image.jpg';
 
 
 class Block extends React.Component {
-
-
 render() {
 return (
 
@@ -26,19 +22,43 @@ return (
 <div className={s.Container}>
 
 
-<div className={s.Content}>
+<div className={s.Row}>
+<div className={s.Left}>
 
 
-  <img className={s.Thumbnail}
-    src={AuthorUrl} 
-  />
+  <a className={cx(s.Button, s.Link)} href="">
+    <img className={cx(s.Avatar, s.Left)} src={AuthorUrl} />
+    <span className={s.Title}>
+      Name Surname
+    </span>
+  </a>
 
+
+</div>
+<div className={s.Right}>
+
+
+  <a className={cx(s.Button, s.Link, s.Social)} href="">
+    <FaInstagram className={s.Glyph} />
+  </a>
+
+
+</div>
+</div>
+
+
+<div className={s.Row}>
+<hr className={s.Divider} />
+</div>
+
+
+<div className={s.Row}>
 
 
   <h5 className={s.Title}>
-  <a href="">
-    Advertising 3
-  </a>
+    <a href="">
+    Product Number One
+    </a>
   </h5>
 
 
@@ -56,37 +76,40 @@ return (
 </div>
 
 
+<div className={s.Row}>
 <hr className={s.Divider} />
+</div>
 
 
-<div className={s.Meta}>
+<div className={s.Row}>
 <div className={s.Left}>
 
 
-  <Link className={s.Button} to="">
-  <img className={cx(s.Avatar, s.Left)} src={AuthorUrl} />
+  <a className={cx(s.Button, s.Link, s.Highlight)} href="">
   <span className={s.Title}>
-    Name Surname
+    Buy Item
   </span>
-  </Link>
+  </a>
 
 
 </div>
 <div className={s.Right}>
 
 
-  <Link className={s.Button} to="">
+  <div className={s.Button}>
   <span className={s.Title}>
-    01 Jan 2000
+    1 000 000
   </span>
-  <FaTwitter className={cx(s.Glyph, s.Right)} />
-  </Link>
+  <FaDollar className={cx(s.Glyph, s.Right)} />
+  </div>
 
 
 </div>
 </div>
 
 
+<div className={cx(s.Background, s.Overlay)}/>
+<img className={cx(s.Background, s.Image)} src={ThumbnailUrl}/>
 <div className={cx(s.Background, s.Color)} />
 
 

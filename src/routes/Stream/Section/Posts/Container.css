@@ -1,9 +1,0 @@
-@import '../../../../components/variables.css';
-
-/* Layout =================================================================== */
-
-.Container {
-  max-width: var(--Size12);
-  margin: 0 auto;
-  padding: 0;
-}

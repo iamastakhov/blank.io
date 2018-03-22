@@ -10,7 +10,7 @@ import { FaInstagram, FaDollar, FaEur } from 'react-icons/lib/fa';
 
 
 import AuthorUrl from './Image.png';
-import ThumbnailUrl from './Image.jpg';
+import ThumbnailUrl from './Image.png';
 
 
 class Block extends React.Component {
@@ -20,6 +20,15 @@ return (
 
 <div className={s.Block}>
 <div className={s.Container}>
+
+
+<div className={s.Row}>
+
+
+  <img className={s.Thumbnail} src={ThumbnailUrl} />
+
+
+</div>
 
 
 <div className={s.Row}>
@@ -38,7 +47,7 @@ return (
 <div className={s.Right}>
 
 
-  <a className={cx(s.Button, s.Link, s.Social)} href="">
+  <a className={cx(s.Button, s.Link)} href="">
     <FaInstagram className={s.Glyph} />
   </a>
 
@@ -108,8 +117,6 @@ return (
 </div>
 
 
-<div className={cx(s.Background, s.Overlay)}/>
-<img className={cx(s.Background, s.Image)} src={ThumbnailUrl}/>
 <div className={cx(s.Background, s.Color)} />
 
 

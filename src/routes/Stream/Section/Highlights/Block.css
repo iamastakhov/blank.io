@@ -6,8 +6,8 @@
   display: inline-block;
   vertical-align: top;
   text-align: left;
-  min-width: var(--Size04);
-  max-width: var(--Size04);
+  min-width: var(--Size03);
+  max-width: var(--Size03);
 }
 
 .Container {
@@ -15,34 +15,51 @@
   display: block;
   overflow: hidden;
   margin: 8px;
-  padding: 0;
-  border-radius: 0;
+  border-radius: 12px;
 }
 
-.Content .Title,
-.Content .Description {
+.Row {
+  float: left;
   display: block;
-  width: auto;
-  margin: 0;
+  width: 100%;
+  height: auto;
+}
+
+.Row .Left {
+  float: left;
+  padding: 0 8px;
+}
+
+.Row .Right {
+  float: right;
+  padding: 0 8px;
+}
+
+.Thumbnail {
+  width: 100%;
+}
+
+.Title,
+.Description {
   padding: 24px;
 }
 
-.Content .Title {
+.Title {
   padding-bottom: 16px;
-  color: var(--ColorBrand);
+  color: var(--ColorWhite);
 }
 
-.Content .Title a {
+.Title a {
   text-decoration: underline;
   color: var(--ColorBrand);
 }
 
-.Content .Title:hover a {
+.Title:hover a {
   text-decoration: none;
 }
 
-.Content .Description {
-  padding: 0 24px 16px 24px;
+.Description {
+  padding-top: 0;
   color: var(--ColorWhiteAlpha);
 }
 
@@ -51,52 +68,42 @@
   background: var(--ColorBrand);
 }
 
-.Meta {
-  display: block;
-  position: relative;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-.Meta .Left {
-  display: block;
-  position: relative;
-  width: auto;
-  float: left;
-  margin: 0;
-  padding: 0 8px;
-}
-
-.Meta .Right {
-  display: block;
-  position: relative;
-  width: auto;
-  float: right;
-  margin: 0;
-  padding: 8px;
-}
-
 .Button {
   display: inline-block;
   margin: 0;
-  padding: 16px;
+  padding: 24px 16px;
 }
 
 .Button .Title,
 .Button .Glyph,
 .Button .Avatar {
   display: inline-block;
-  width: auto;
   margin: 0;
   padding: 0;
   color: var(--ColorWhiteAlpha);
 }
 
-.Button:hover .Title,
-.Button:hover .Glyph,
-.Button:hover .Avatar {
+.Button.Link:hover .Title,
+.Button.Link:hover .Glyph,
+.Button.Link:hover .Avatar {
   color: var(--ColorBrand);
+}
+
+.Button.Highlight .Title,
+.Button.Highlight .Glyph,
+.Button.Highlight .Avatar {
+  color: var(--ColorBrand);
+}
+
+.Button.Social .Title,
+.Button.Social .Glyph {
+  color: var(--ColorBrand);
+}
+
+.Button.Social .Glyph {
+  z-index: 1;
+  position: relative;
+  display: block;
 }
 
 .Button .Title {
@@ -108,18 +115,59 @@
   margin-top: 2px;
 }
 
+.Button .Glyph.Left {
+  margin-right: 16px;
+} 
+
 .Button .Glyph.Right {
-  margin-left: 16px !important;
+  margin-left: 16px;
 } 
 
 .Button .Avatar {
-  border-radius: 16px;
-  margin: -8px;
   width: 32px;
   height: 32px;
+  margin: -8px 0 -8px -8px;
+  border-radius: 16px;
 }
 
 .Button .Avatar.Left {
   margin-right: 16px;
-  margin-left: 0;
+}
+
+.Background.Overlay,
+.Background.Image,
+.Background.Color {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.Background.Overlay {
+  z-index: -1;
+  position: absolute;
+  background: var(--ColorBlackAlpha);
+}
+
+.Background.Image {
+  z-index: 0;
+  position: absolute;
+  width: auto;
+  height: 100%;
+  min-height: 100%;
+  min-width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  background-size: cover;
+}
+
+.Block:hover .Background.Image {
+  z-index: -2;
+}
+
+.Background.Color {
+  z-index: -3;
+  position: absolute;
+  background: var(--Color032);
 }
