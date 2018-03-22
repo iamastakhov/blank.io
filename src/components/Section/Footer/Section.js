@@ -1,19 +1,16 @@
 import React from 'react';
 
 
-import cx from 'classnames';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Section.css';
 
 
-import Pages from './Block/Pages/Block'
-import Languages from './Block/Languages/Block'
-import Enter from './Block/Enter/Block'
+import Pages from './Block/Pages/Block';
+import Languages from './Block/Languages/Block';
+import Enter from './Block/Enter/Block';
 
 
 class Section extends React.Component {
-
-
 render() {
 return (
 
@@ -23,13 +20,19 @@ return (
 
 
 <div className={s.Left}>
+
+
   <Pages/>
+
+
 </div>
-
-
 <div className={s.Right}>
+
+
   <Languages/>
   <Enter/>
+
+
 </div>
 
 
@@ -37,9 +40,7 @@ return (
 </nav>
 
 
-);
-}
-}
+); } }
 
 
 export default withStyles(s)(Section);

@@ -11,6 +11,7 @@ import Anchor from '../../components/Section/Anchor/Section';
 import Services from './Section/Services/Section';
 import Skills from './Section/Skills/Section';
 import Bio from './Section/Bio/Section';
+import Footer from '../../components/Section/Footer/Section';
 
 
 import Sticky from 'react-stickynode';
@@ -37,6 +38,8 @@ return (
   <Services />
   <Skills />
   <Bio />
+
+  <Footer />
 
 
 </div>

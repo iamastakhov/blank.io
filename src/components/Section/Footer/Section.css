@@ -3,14 +3,16 @@
 
 .Section {
   z-index: 100;
-  position: absolute;
+  position: relative;
+  display: block;
   width: 100%;
-  top: 0;
 }
 
 .Container {
+  display: block;
   max-width: var(--Size09);
   margin: 0 auto;
+  padding: 0;
 }
 
 .Left {

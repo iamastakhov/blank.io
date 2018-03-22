@@ -6,14 +6,10 @@ import s from './Block.css';
 
 
 import Link from '../../../../Link';
-
-
 import { FaBolt } from 'react-icons/lib/fa';
 
 
 class Block extends React.Component {
-
-
 render() {
 return (
 
@@ -31,9 +27,7 @@ return (
 </div>
 
 
-);
-}
-}
+); } }
 
 
 export default withStyles(s)(Block);
