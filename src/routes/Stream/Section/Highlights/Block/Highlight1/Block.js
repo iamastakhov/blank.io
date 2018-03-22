@@ -108,11 +108,6 @@ return (
 </div>
 
 
-<div className={cx(s.Background, s.Overlay)}/>
-<img className={cx(s.Background, s.Image)} src={ThumbnailUrl}/>
-<div className={cx(s.Background, s.Color)} />
-
-
 </div>
 </div>
 

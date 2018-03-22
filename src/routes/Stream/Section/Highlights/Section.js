@@ -35,8 +35,6 @@ return (
 
 
     <Highlight1 />
-    <Highlight2 />
-    <Highlight3 />
 
 
 </div>
@@ -53,8 +51,8 @@ return (
 <div className={s.Container}>
 
 
-    <Highlight1 />
     <Highlight2 />
+    <Highlight3 />
 
 
 </div>
