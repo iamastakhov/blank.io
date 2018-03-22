@@ -35,7 +35,7 @@
   padding: 0 8px;
 }
 
-.Thumbnail {
+.Image {
   width: 100%;
 }
 
@@ -45,7 +45,6 @@
 }
 
 .Title {
-  padding-bottom: 16px;
   color: var(--ColorWhite);
 }
 
@@ -54,18 +53,17 @@
   color: var(--ColorBrand);
 }
 
-.Title:hover a {
+.Title a:hover {
   text-decoration: none;
 }
 
 .Description {
-  padding-top: 0;
   color: var(--ColorWhiteAlpha);
 }
 
 .Divider {
-  margin: 0 24px;
-  background: var(--ColorBrand);
+  margin: 0;
+  background: var(--ColorBlack);
 }
 
 .Button {
@@ -96,7 +94,6 @@
 }
 
 .Button .Title {
-  text-transform: uppercase;
   letter-spacing: 1px;
 }
 

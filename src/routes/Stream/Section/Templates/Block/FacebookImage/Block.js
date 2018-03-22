@@ -1,108 +1,130 @@
 import React from 'react';
 
-import { FaFacebook } from 'react-icons/lib/fa';
+import { FaFacebook, FaHeart, FaMailForward, FaComment, FaEllipsisH } from 'react-icons/lib/fa';
 
 import cx from 'classnames';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from '../../Block.css';
 
-import ImageUrl from './Image.jpg';
 import AvatarUrl from './Avatar.png';
+import ImageUrl from './Image.jpg';
 
 
 class Block extends React.Component {
-
-  render() {
-    return (
-
-
-      <div className={s.Block}>
+render() {
+return (
 
 
-        <div className={s.Column}>
+<div className={s.Block}>
+<div className={s.Container}>
 
 
-          <div className={s.Meta}>
+<div className={s.Row}>
+<div className={s.Left}>
 
 
-            <div className={s.Left}>
+  <a className={cx(s.Button, s.Link)} href="">
+  <img className={cx(s.Avatar, s.Left)} src={AvatarUrl} />
+  <span className={s.Title}>
+    Name Surname
+  </span>
+  </a>
 
 
-              <button className={s.Button}>
-                <a href="">
-                  <img className={cx(s.Avatar, s.Left)} src={AvatarUrl} alt="" />
-                  <p className={s.Title}>
-                    Felipe Pantone
-                  </p>
-                </a>
-              </button>
+</div>
+<div className={s.Right}>
 
 
-            </div>
+  <a className={cx(s.Button, s.Link)} href="">
+  <span className={s.Title}>
+    21 Jun at 13:46
+  </span>
+  <FaFacebook className={cx(s.Glyph, s.Right)} />
+  </a>
 
 
-            <div className={s.Right}>
+</div>
+</div>
 
 
-              <button className={s.Button}>
-                <a href="">
-                  <p className={s.Title}>
-                    1 June at 17:41
-                  </p>
-                  <FaFacebook className={cx(s.Glyph, s.Right)} />
-                </a>
-              </button>
+<div className={s.Row}>
 
 
-            </div>
+  <img className={s.Image} src={ImageUrl} />
 
 
-          </div>
+</div>
 
 
-          <p className={s.Description}>
-            I woke up in
-            &nbsp;
-            <a href="">
-            #NewYorkCity
-            </a>
-            .
-            This evening is the opening
-            &nbsp;
-            <a href="">
-            #interstellaris
-            </a>
-            &nbsp;
-            at
-            &nbsp;
-            <a href="">
-            @grgallery_ny
-            </a>
-            &nbsp;
-            together with
-            &nbsp;
-            <a href="">
-            #albertodifabio
-            </a>
-            &nbsp;
-            <a href="">
-            #andreabianconi
-            </a>
-          </p>
+<div className={s.Row}>
 
 
-          <img className={s.Image} src={ImageUrl} alt="" />
+  <p className={s.Description}>
+    Art Direction, Graphic Design, Creative Direction Art Direction,
+    Graphic Design, Creative Direction Art Direction, Graphic Design,
+    Creative Direction Art Direction, Graphic Design
+  </p>
 
 
-        </div>
+</div>
 
 
-      </div>
+<div className={s.Row}>
 
 
-    );
-  }
-}
+<hr className={s.Divider} />
+
+
+</div>
+
+
+<div className={s.Row}>
+<div className={s.Left}>
+
+
+  <a className={cx(s.Button, s.Link)} href="">
+  <span className={s.Title}>
+    9876
+  </span>
+  <FaHeart className={cx(s.Glyph, s.Right)} />
+  </a>
+
+  <a className={cx(s.Button, s.Link)} href="">
+  <span className={s.Title}>
+    543
+  </span>
+  <FaMailForward className={cx(s.Glyph, s.Right)} />
+  </a>
+
+  <a className={cx(s.Button, s.Link)} href="">
+  <span className={s.Title}>
+    21
+  </span>
+  <FaComment className={cx(s.Glyph, s.Right)} />
+  </a>
+
+
+</div>
+<div className={s.Right}>
+
+
+  <a className={cx(s.Button, s.Link)} href="">
+  <FaEllipsisH className={s.Glyph} />
+  </a>
+
+
+</div>
+</div>
+
+
+<div className={cx(s.Background, s.Color)} />
+
+
+</div>
+</div>
+
+
+); } }
 
 
 export default withStyles(s)(Block);

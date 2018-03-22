@@ -1,24 +1,16 @@
 import React from 'react';
-
+import { CarouselProvider } from 'pure-react-carousel';
 
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Page.css';
 
-
-import { CarouselProvider } from 'pure-react-carousel';
-
-
 import Navigation from '../../components/Section/Navigation/Section'
 import Secondary from '../../components/Section/Secondary/Stream'
-
-
 import Highlights from './Section/Highlights/Section'
-import Posts from './Section/Posts/Section'
+import Posts from './Section/Templates/Section'
 
 
 class Page extends React.Component {
-
-
 render() {
 return (
 
@@ -49,11 +41,7 @@ return (
 </div>
 
 
-);
-}
-
-
-}
+); } }
 
 
 export default withStyles(s)(Page);
