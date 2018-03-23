@@ -1,10 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import normalizeCss from 'normalize.css';
 import s from './Layout.css';
+
+import Navigation from '../Section/Navigation/Section';
+import Footer from '../Section/Footer/Section';
 
 
 class Layout extends React.Component {
@@ -20,15 +22,19 @@ return (
 <div>
 
 
+  <Navigation />
+
+
   {this.props.children}
+  
+  
+  <Footer />
 
 
 </div>
 
 
-);
-}
-}
+); } }
 
 
 export default withStyles(normalizeCss, s)(Layout);

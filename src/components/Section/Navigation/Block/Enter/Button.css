@@ -1,27 +1,11 @@
 @import '../../../../variables.css';
 
 
-.Block {
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-}
-
-.Container {
-  margin: 0;
-  padding: 8px 16px;
-}
-
-.List {
-  display: inline-block;
-}
-
-
 .Button {
   display: inline-block;
   width: auto;
   margin: 0;
-  padding: 8px 16px;
+  padding: 24px 16px;
   background: none;
 }
 
@@ -39,4 +23,18 @@
 
 .Button:hover .Title {
   color: var(--ColorWhite);
+}
+
+.ButtonActive .Title,
+.ButtonActive .Glyph {
+  color: var(--ColorBrand);
+}
+
+.ButtonActive:hover {
+  cursor: default;
+}
+
+.ButtonActive:hover .Title,
+.ButtonActive .Glyph {
+  color: var(--ColorBrand);
 }

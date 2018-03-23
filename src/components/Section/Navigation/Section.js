@@ -1,9 +1,7 @@
 import React from 'react';
 
-
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Section.css';
-
 
 import Pages from './Block/Pages/Block';
 import Languages from './Block/Languages/Block';
@@ -17,8 +15,6 @@ return (
 
 <nav className={s.Section} id="navigation">
 <div className={s.Container}>
-
-
 <div className={s.Left}>
 
 
@@ -34,8 +30,6 @@ return (
 
 
 </div>
-
-
 </div>
 </nav>
 

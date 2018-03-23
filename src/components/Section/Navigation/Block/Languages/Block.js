@@ -1,18 +1,14 @@
 import React from 'react';
-
+import { FaCaretDown } from 'react-icons/lib/fa';
 
 import cx from 'classnames';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Block.css';
 
-
-import Link from '../../../../Link';
-import { FaCaretDown } from 'react-icons/lib/fa';
+import Button from './Button';
 
 
 class Block extends React.Component {
-
-
 render() {
 return (
 
@@ -21,34 +17,32 @@ return (
 <div className={s.Container}>
 
 
-  <button className={s.Button}>
-    <p className={s.Title}>
+  <div className={s.Button}>
+    <span className={s.Title}>
       Language
-    </p>
+    </span>
     <FaCaretDown className={cx(s.Glyph, s.Right)} />
-  </button>
+  </div>
 
 
 <div className={s.Menu}>
 
 
-  <Link className={s.Button} to="/">
-    <p className={s.Title}>
-      English
-    </p>
-  </Link>
+  <Button 
+    title="English" 
+    to="/" 
+  />
+ 
 
-  <Link className={s.Button} to="/">
-    <p className={s.Title}>
-      Русский
-    </p>
-  </Link>
+  <Button 
+    title="Русский" 
+    to="/" 
+  />
 
-  <Link className={s.Button} to="/">
-    <p className={s.Title}>
-      汉语漢語
-    </p>
-  </Link>
+  <Button 
+    title="汉语漢語" 
+    to="/" 
+  />
 
 
 </div>
@@ -58,9 +52,7 @@ return (
 </div>
 
 
-);
-}
-}
+); } }
 
 
 export default withStyles(s)(Block);

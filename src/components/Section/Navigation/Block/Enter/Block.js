@@ -1,12 +1,10 @@
 import React from 'react';
-
+import { FaBolt } from 'react-icons/lib/fa';
 
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Block.css';
 
-
 import Link from '../../../../Link';
-import { FaBolt } from 'react-icons/lib/fa';
 
 
 class Block extends React.Component {

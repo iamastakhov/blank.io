@@ -10,15 +10,27 @@
 
 .Container {
   display: block;
+  clear: both;
   max-width: var(--Size09);
+  min-height: var(--Size02);
   margin: 0 auto;
   padding: 0;
 }
 
-.Left {
+.Container .Left {
   float: left;
 }
 
-.Right {
+.Container .Right {
   float: right;
+}
+
+.Background.Color {
+  z-index: -100;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: var(--ColorBlack);
 }

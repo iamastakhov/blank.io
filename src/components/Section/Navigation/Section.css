@@ -3,23 +3,23 @@
 
 .Section {
   z-index: 100;
-  position: absolute;
-  display: block;
+  position: relative; 
+  overflow: hidden;
   width: 100%;
-  top: 0;
+  bottom: -80px;
+  margin-top: -80px;
 }
 
 .Container {
-  display: block;
   max-width: var(--Size09);
   margin: 0 auto;
-  padding: 0;
+  clear: both;
 }
 
-.Left {
+.Container .Left {
   float: left;
 }
 
-.Right {
+.Container .Right {
   float: right;
 }

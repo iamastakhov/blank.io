@@ -20,6 +20,10 @@
   background: none;
 }
 
+.Item .Button {
+  padding: 8px 16px;
+}
+
 .Button .Title {
   display: inline-block;
   text-transform: uppercase;

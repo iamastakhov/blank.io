@@ -21,6 +21,9 @@ return (
 <div className={s.Container}>
 
 
+<div className={s.List}>
+
+
   <button className={s.Button}>
     <p className={s.Title}>
       Language
@@ -29,26 +32,31 @@ return (
   </button>
 
 
-<div className={s.Menu}>
+<div className={s.Item}>
+<Link className={s.Button} to="/">
+<p className={s.Title}>
+  English
+</p>
+</Link>
+</div>
 
 
-  <Link className={s.Button} to="/">
-    <p className={s.Title}>
-      English
-    </p>
-  </Link>
+<div className={s.Item}>
+<Link className={s.Button} to="/">
+<p className={s.Title}>
+  Русский
+</p>
+</Link>
+</div>
 
-  <Link className={s.Button} to="/">
-    <p className={s.Title}>
-      Русский
-    </p>
-  </Link>
 
-  <Link className={s.Button} to="/">
-    <p className={s.Title}>
-      汉语漢語
-    </p>
-  </Link>
+<div className={s.Item}>
+<Link className={s.Button} to="/">
+<p className={s.Title}>
+  汉语漢語
+</p>
+</Link>
+</div>
 
 
 </div>

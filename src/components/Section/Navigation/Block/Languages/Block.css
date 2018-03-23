@@ -58,18 +58,3 @@
   display: block;
   width: auto;
 }
-
-.Block:hover .Menu .Button {
-  padding: 16px 24px;
-  display: block;
-  text-transform: uppercase;
-}
-
-.Block:hover .Menu .Button .Title {
-  color: var(--ColorBlackAlpha);
-}
-
-.Block:hover .Menu .Button:hover .Title {
-  color: var(--ColorBlack);
-}
-
