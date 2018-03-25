@@ -1,15 +1,11 @@
 import React from 'react';
-
+import Scrollchor from 'react-scrollchor';
 
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Block.css';
 
 
-import Scrollchor from 'react-scrollchor';
-
-
 class Block extends React.Component {
-
 
 render() {
 return (
@@ -19,24 +15,33 @@ return (
 <div className={s.Container}>
 
 
-  <Scrollchor className={s.Button} to="Services">
-    <span className={s.Title}>
-      Services
-    </span>
+  <Scrollchor 
+    className={s.Button} 
+    to="services"
+  >
+  <span className={s.Title}>
+    Services
+  </span>
   </Scrollchor>
 
 
-  <Scrollchor className={s.Button} to="Skills">
-    <span className={s.Title}>
-      Skills
-    </span>
+  <Scrollchor 
+    className={s.Button}
+    to="skills"
+  >
+  <span className={s.Title}>
+    Skills
+  </span>
   </Scrollchor>
 
 
-  <Scrollchor className={s.Button} to="Bio">
-    <span className={s.Title}>
-      Bio
-    </span>
+  <Scrollchor 
+    className={s.Button} 
+    to="bio"
+  >
+  <span className={s.Title}>
+    Bio
+  </span>
   </Scrollchor>
 
 
