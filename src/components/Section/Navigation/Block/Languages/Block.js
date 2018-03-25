@@ -9,6 +9,7 @@ import Button from './Button';
 
 
 class Block extends React.Component {
+
 render() {
 return (
 
@@ -18,10 +19,10 @@ return (
 
 
   <div className={s.Button}>
-    <span className={s.Title}>
-      Language
-    </span>
-    <FaCaretDown className={cx(s.Glyph, s.Right)} />
+  <span className={s.Title}>
+    Language
+  </span>
+  <FaCaretDown className={cx(s.Glyph, s.Right)} />
   </div>
 
 
@@ -33,7 +34,6 @@ return (
     to="/" 
   />
  
-
   <Button 
     title="Русский" 
     to="/" 

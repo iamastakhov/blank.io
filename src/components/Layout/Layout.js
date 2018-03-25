@@ -7,6 +7,7 @@ import s from './Layout.css';
 
 import Navigation from '../Section/Navigation/Section';
 import Footer from '../Section/Footer/Section';
+import Copyright from '../Section/Copyright/Section';
 
 
 class Layout extends React.Component {
@@ -29,6 +30,7 @@ return (
   
   
   <Footer />
+  <Copyright />
 
 
 </div>

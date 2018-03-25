@@ -17,13 +17,17 @@
   width: auto;
   margin: 0;
   padding: 24px 16px;
+  background: none;
 }
 
 .Button .Glyph {
   display: inline-block;
+}
+
+.Button.Highlight .Glyph {
   color: var(--ColorBrand);
 }
 
-.Button:hover .Glyph {
+.Button.Highlight:hover .Glyph {
   color: var(--ColorWhite);
 }

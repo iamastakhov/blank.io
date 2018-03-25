@@ -1,19 +1,13 @@
 import React from 'react';
-
+import Scrollchor from 'react-scrollchor';
+import { FaLongArrowDown } from 'react-icons/lib/fa';
 
 import cx from 'classnames';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Block.css';
 
 
-import Scrollchor from 'react-scrollchor';
-
-
-import { FaLongArrowDown } from 'react-icons/lib/fa';
-
-
 class Block extends React.Component {
-
 
 render() {
 return (
@@ -23,11 +17,18 @@ return (
 <div className={s.Container}>
 
 
-  <Scrollchor to="" className={s.Button}>
-    <span className={s.Title}>
-     Scroll down
-    </span>
-    <FaLongArrowDown className={cx(s.Glyph, s.Right)} />
+  <Scrollchor 
+    className={s.Button}
+    to="posts" 
+  >
+
+
+  <span className={s.Title}>
+    Scroll down
+  </span>
+
+
+  <FaLongArrowDown className={cx(s.Glyph, s.Right)} />
   </Scrollchor>
 
 

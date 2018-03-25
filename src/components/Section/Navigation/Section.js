@@ -9,6 +9,7 @@ import Enter from './Block/Enter/Block';
 
 
 class Section extends React.Component {
+
 render() {
 return (
 
@@ -26,6 +27,7 @@ return (
 
 
   <Languages/>
+
   <Enter/>
 
 

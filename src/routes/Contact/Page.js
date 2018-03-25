@@ -5,7 +5,6 @@ import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Page.css';
 
 
-import Navigation from '../../components/Section/Navigation/Section'
 import Description from './Section/Description/Section'
 import Links from './Section/Links/Section'
 import Social from './Section/Social/Section'
@@ -22,7 +21,6 @@ return (
 <div className={s.Page}>
 
 
-  <Navigation/>
   <Description/>
   <Links/>
   <Social/>

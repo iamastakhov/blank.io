@@ -1,20 +1,15 @@
 import React from 'react';
-
+import { ButtonFirst, ButtonBack, ButtonNext, ButtonLast } from 'pure-react-carousel';
+import { FaStepBackward, FaCaretLeft, FaCaretRight, FaStepForward } from 'react-icons/lib/fa';
 
 import cx from 'classnames';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Block.css';
 
-
-import { ButtonBack, ButtonNext } from 'pure-react-carousel';
-import { FaLongArrowLeft, FaLongArrowRight, FaLongArrowDown } from 'react-icons/lib/fa';
-
-
 import Link from '../../../../Link';
 
 
 class Block extends React.Component {
-
 
 render() {
 return (
@@ -24,20 +19,30 @@ return (
 <div className={s.Container}>
 
 
+  <ButtonFirst className={s.Button}>
+  <FaStepBackward className={s.Glyph} />
+  </ButtonFirst>
+
+
   <ButtonBack className={s.Button}>
-    <FaLongArrowLeft className={cx(s.Glyph, s.Left)} />
-    <span className={s.Title}>
-      Previous
-    </span>
+  <span className={s.Title}>
+    Prev.
+  </span>
+  <FaCaretLeft className={cx(s.Glyph, s.Right)} />
   </ButtonBack>
 
 
   <ButtonNext className={s.Button}>
-    <span className={s.Title}>
-      Next
-    </span>
-    <FaLongArrowRight className={cx(s.Glyph, s.Right)} />
+  <FaCaretRight className={cx(s.Glyph, s.Left)} />
+  <span className={s.Title}>
+    Next
+  </span>
   </ButtonNext>
+
+
+  <ButtonLast className={s.Button}>
+  <FaStepForward className={s.Glyph} />
+  </ButtonLast>
 
 
 </div>

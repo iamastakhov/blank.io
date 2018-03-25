@@ -2,10 +2,12 @@ import React from 'react';
 
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Block.css';
+
 import Button from './Button';
 
 
 class Block extends React.Component {
+
 render() {
 return (
 
@@ -19,18 +21,15 @@ return (
     to="/" 
   />
  
- 
   <Button 
     title="Stream" 
     to="/stream"
   />
 
-
   <Button 
     title="Store" 
     to="/store"
   />
-
 
   <Button 
     title="Contact" 

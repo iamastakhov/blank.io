@@ -1,15 +1,13 @@
 import React from 'react';
+import { FaCopyright } from 'react-icons/lib/fa';
 
-
+import cx from 'classnames';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Block.css';
 
 
-import Link from '../../../../Link';
-import { FaBolt } from 'react-icons/lib/fa';
-
-
 class Block extends React.Component {
+
 render() {
 return (
 
@@ -18,9 +16,17 @@ return (
 <div className={s.Container}>
 
 
-  <Link to="/login" className={s.Button}>
-    <FaBolt className={s.Glyph} />
-  </Link>
+  <div 
+    className={cx(s.Button, s.Label)}
+  >
+  <span className={s.Title}>
+    2018
+  </span>
+  <FaCopyright className={cx(s.Glyph, s.Center)} />
+  <span className={s.Title}>
+    Copyright by Oleg Ask.
+  </span>
+  </div>
 
 
 </div>

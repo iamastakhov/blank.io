@@ -5,8 +5,6 @@ import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Block.css';
 
 
-import Link from '../../../../Link';
-
 
 class Block extends React.Component {
 

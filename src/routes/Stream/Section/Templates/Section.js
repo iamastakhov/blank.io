@@ -45,7 +45,7 @@ render() {
 return (
 
 
-<div className={s.Section} id="Products" >
+<div className={s.Section} id="posts">
 <div className={s.Container}>
 <Masonry>
 

@@ -21,21 +21,19 @@
 }
 
 .Button .Title {
-  display: inline-block;
-  text-transform: uppercase;
   letter-spacing: 1px;
-  color: var(--ColorWhiteAlpha);
+  text-transform: uppercase;
 }
 
-.Button .Glyph {
-  display: inline-block;
+.Button .Glyph.Right {
   margin-left: 16px;
-  color: var(--ColorWhiteAlpha);
 }
 
-.Button:hover .Title,
-.Button:hover .Glyph {
-  color: var(--ColorWhite);
+.Button .Title,
+.Button .Glyph {
+  cursor: default;
+  display: inline-block;
+  color: var(--ColorWhiteAlpha);
 }
 
 .Block:hover .Button .Title,
@@ -45,13 +43,13 @@
 
 .Menu {
   position: absolute;
+  overflow: hidden;
   display: none;
   margin: 0;
   padding: 8px 0;
-  overflow: hidden;
   border-radius: 4px;
-  box-shadow: none;
   background: var(--ColorWhite);
+  box-shadow: var(--Shadow);
 }
 
 .Block:hover .Menu {

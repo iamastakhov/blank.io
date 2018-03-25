@@ -24,7 +24,7 @@ render() {
 return (
 
 
-<div className={s.Section}>
+<div className={s.Section} id="social">
 <div className={s.Container}>
 
 

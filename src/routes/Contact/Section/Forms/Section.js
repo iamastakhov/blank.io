@@ -16,7 +16,7 @@ render() {
 return (
 
 
-<div className={s.Section} id="forms">
+<div className={s.Section} id="mail">
 <div className={s.Container}>
 
 

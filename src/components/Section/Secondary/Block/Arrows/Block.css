@@ -25,7 +25,6 @@
   display: inline-block;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: var(--ColorWhiteAlpha);
 }
 
 .Button .Glyph {
@@ -48,4 +47,10 @@
 .Button:hover .Title,
 .Button:hover .Glyph {
   color: var(--ColorWhite);
+}
+
+.Button:disabled .Title,
+.Button:disabled .Glyph {
+  color: var(--ColorWhiteAlpha);
+  opacity: 0.2;
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import Scrollchor from 'react-scrollchor';
 
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Block.css';
@@ -26,7 +27,10 @@ return (
 
 
   <div className={s.Item}>
-  <Link className={s.Button} to="/">
+  <Link
+    className={s.Button} 
+    to="/#services"
+  >
   <span className={s.Title}>
     Services
   </span>
@@ -35,7 +39,10 @@ return (
 
 
   <div className={s.Item}>
-  <Link className={s.Button} to="/">
+  <Link
+    className={s.Button} 
+    to="/#skills"
+  >
   <span className={s.Title}>
     Skills
   </span>
@@ -44,7 +51,10 @@ return (
 
 
   <div className={s.Item}>
-  <Link className={s.Button} to="/">
+  <Link
+    className={s.Button} 
+    to="/#bio"
+  >
   <span className={s.Title}>
     Bio
   </span>
@@ -65,31 +75,27 @@ return (
 
 
   <div className={s.Item}>
-  <Link className={s.Button} to="/">
+  <Link
+    className={s.Button} 
+    to="/stream#highlights"
+  >
   <span className={s.Title}>
-    Services
+    Highlights
   </span>
   </Link>
   </div>
 
 
   <div className={s.Item}>
-  <Link className={s.Button} to="/">
+  <Link
+    className={s.Button} 
+    to="/stream#posts"
+  >
   <span className={s.Title}>
-    Skills
+    Posts
   </span>
   </Link>
   </div>
-
-
-  <div className={s.Item}>
-  <Link className={s.Button} to="/">
-  <span className={s.Title}>
-    Bio
-  </span>
-  </Link>
-  </div>
-
 
 
 </div>
@@ -105,27 +111,24 @@ return (
 
 
   <div className={s.Item}>
-  <Link className={s.Button} to="/">
+  <Link
+    className={s.Button} 
+    to="/store#ads"
+  >
   <span className={s.Title}>
-    Services
+    Ads
   </span>
   </Link>
   </div>
 
 
   <div className={s.Item}>
-  <Link className={s.Button} to="/">
+  <Link
+    className={s.Button} 
+    to="/store#products"
+  >
   <span className={s.Title}>
-    Skills
-  </span>
-  </Link>
-  </div>
-
-
-  <div className={s.Item}>
-  <Link className={s.Button} to="/">
-  <span className={s.Title}>
-    Bio
+    Products
   </span>
   </Link>
   </div>
@@ -144,27 +147,36 @@ return (
 
 
   <div className={s.Item}>
-  <Link className={s.Button} to="/">
+  <Link
+    className={s.Button} 
+    to="/contact#links"
+  >
   <span className={s.Title}>
-    Services
+    Links
   </span>
   </Link>
   </div>
 
 
   <div className={s.Item}>
-  <Link className={s.Button} to="/">
+  <Link
+    className={s.Button} 
+    to="/contact#social"
+  >
   <span className={s.Title}>
-    Skills
+    Social
   </span>
   </Link>
   </div>
 
 
   <div className={s.Item}>
-  <Link className={s.Button} to="/">
+  <Link
+    className={s.Button} 
+    to="/contact#mail"
+  >
   <span className={s.Title}>
-    Bio
+    Mail me
   </span>
   </Link>
   </div>

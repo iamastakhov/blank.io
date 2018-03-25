@@ -14,11 +14,11 @@
 
 .List {
   display: inline-block;
+  vertical-align: top;
 }
 
-
 .Button {
-  display: inline-block;
+  display: block;
   width: auto;
   margin: 0;
   padding: 8px 16px;

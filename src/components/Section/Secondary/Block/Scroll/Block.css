@@ -22,14 +22,8 @@
 }
 
 .Button .Title {
-  display: inline-block;
-  text-transform: uppercase;
   letter-spacing: 1px;
-  color: var(--ColorWhiteAlpha);
-}
-
-.Button .Glyph {
-  display: inline-block;
+  text-transform: uppercase;
 }
 
 .Button .Glyph.Left {
@@ -42,6 +36,7 @@
 
 .Button .Title,
 .Button .Glyph {
+  display: inline-block;
   color: var(--ColorWhiteAlpha);
 }
 

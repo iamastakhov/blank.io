@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaBolt } from 'react-icons/lib/fa';
 
+import cx from 'classnames';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Block.css';
 
@@ -8,6 +9,7 @@ import Link from '../../../../Link';
 
 
 class Block extends React.Component {
+
 render() {
 return (
 
@@ -16,8 +18,15 @@ return (
 <div className={s.Container}>
 
 
-  <Link to="/login" className={s.Button}>
+  <Link 
+    className={cx(s.Button, s.Highlight)}
+    to="/login" 
+  >
+
+
     <FaBolt className={s.Glyph} />
+
+
   </Link>
 
 

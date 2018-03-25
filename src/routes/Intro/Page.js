@@ -5,6 +5,7 @@ import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Page.css';
 
 import Header from '../../components/Section/Header/Section';
+import Secondary from '../../components/Section/Secondary/Intro';
 import Anchor from '../../components/Section/Anchor/Section';
 import Services from './Section/Services/Section';
 import Skills from './Section/Skills/Section';
@@ -20,7 +21,7 @@ return (
 
 
   <Header />
-
+  <Secondary />
 
   <Sticky innerZ={100}>
   <Anchor />

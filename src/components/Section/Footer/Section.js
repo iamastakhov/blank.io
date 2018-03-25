@@ -6,7 +6,6 @@ import s from './Section.css';
 
 import Pages from './Block/Pages/Block';
 import Languages from './Block/Languages/Block';
-import Enter from './Block/Enter/Block';
 
 
 class Section extends React.Component {
@@ -27,7 +26,6 @@ return (
 
 
   <Languages/>
-  <Enter/>
 
 
 </div>

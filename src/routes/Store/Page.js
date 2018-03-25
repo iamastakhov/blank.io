@@ -1,16 +1,13 @@
 import React from 'react';
-
+import { CarouselProvider } from 'pure-react-carousel';
+import Sticky from 'react-stickynode';
 
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Page.css';
 
-
-import { CarouselProvider } from 'pure-react-carousel';
-
-
-import Navigation from '../../components/Section/Navigation/Section';
 import Secondary from '../../components/Section/Secondary/Store';
 import Ads from './Section/Ads/Section';
+import Search from '../../components/Section/Search/Store'
 import Products from './Section/Products/Section';
 
 
@@ -20,9 +17,6 @@ return (
 
 
 <div className={s.Page}>
-
-
-  <Navigation />
 
 
   <CarouselProvider
@@ -38,6 +32,9 @@ return (
 
   </CarouselProvider>
 
+  <Sticky innerZ={100}>
+  <Search />
+  </Sticky>
 
   <Products />
 

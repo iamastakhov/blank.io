@@ -24,39 +24,39 @@ return (
 <div className={s.List}>
 
 
-  <button className={s.Button}>
-    <p className={s.Title}>
-      Language
-    </p>
-    <FaCaretDown className={cx(s.Glyph, s.Right)} />
-  </button>
+  <div className={cx(s.Button, s.Label)}>
+  <span className={s.Title}>
+    Language
+  </span>
+  <FaCaretDown className={cx(s.Glyph, s.Right)} />
+  </div>
 
 
-<div className={s.Item}>
-<Link className={s.Button} to="/">
-<p className={s.Title}>
-  English
-</p>
-</Link>
-</div>
+  <div className={s.Item}>
+  <Link className={s.Button} to="/">
+  <span className={s.Title}>
+    English
+  </span>
+  </Link>
+  </div>
 
 
-<div className={s.Item}>
-<Link className={s.Button} to="/">
-<p className={s.Title}>
-  Русский
-</p>
-</Link>
-</div>
+  <div className={s.Item}>
+  <Link className={s.Button} to="/">
+  <span className={s.Title}>
+    Русский
+  </span>
+  </Link>
+  </div>
 
 
-<div className={s.Item}>
-<Link className={s.Button} to="/">
-<p className={s.Title}>
-  汉语漢語
-</p>
-</Link>
-</div>
+  <div className={s.Item}>
+  <Link className={s.Button} to="/">
+  <span className={s.Title}>
+    汉语漢語
+  </span>
+  </Link>
+  </div>
 
 
 </div>

@@ -7,7 +7,7 @@ import s from './Section.css';
 
 
 import Arrows from './Block/Arrows/Block'
-import Scroll from './Block/Scroll/Block'
+import Scroll from './Block/Scroll/Stream'
 
 
 class Section extends React.Component {

@@ -4,17 +4,15 @@
 .Section {
   z-index: 100;
   position: relative;
-  display: block;
+  overflow: visible;
   width: 100%;
+  min-height: var(--Size02);
 }
 
 .Container {
-  display: block;
-  clear: both;
   max-width: var(--Size09);
-  min-height: var(--Size02);
   margin: 0 auto;
-  padding: 0;
+  clear: both;
 }
 
 .Container .Left {

@@ -12,11 +12,12 @@ import history from '../../../../../history';
 
 class Button extends Component {
 
-  constructor(props) {
+constructor(props) {
   super(props);
   this.state = {
     isActive: false,
 };
+
 }
 
 componentDidMount() {
@@ -39,11 +40,14 @@ render() {
 return (
 
 
-<Link to={this.props.to} className={cx(s.Button, this.state.isActive && s.ButtonActive)}>
+<Link 
+  className={cx(s.Button, this.state.isActive && s.Active)}
+  to={this.props.to} 
+>
 
 
   {this.state.isActive && 
-  <FaBars className={s.Glyph}/>
+  <FaBars className={cx(s.Glyph, s.Left)}/> 
   }
 
   <span className={s.Title}>

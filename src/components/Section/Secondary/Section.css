@@ -4,27 +4,22 @@
 .Section {
   z-index: 100;
   position: relative;
+  overflow: visible;
   width: 100%;
-  height: 80px;
-  margin: -80px 0 80px 0;
+  top: -80px;
+  margin-bottom: 0;
 }
 
 .Container {
-  position: relative;
-  display: block;
-  overflow: hidden;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 100%;
   max-width: var(--Size09);
   margin: 0 auto;
+  clear: both;
 }
 
-.Left {
+.Container .Left {
   float: left;
 }
 
-.Right {
+.Container .Right {
   float: right;
 }

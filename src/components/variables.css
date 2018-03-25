@@ -43,8 +43,11 @@
    --ColorLight: rgb(192, 192, 192);                                /* #C0C0C0 */
    --ColorWhite: rgb(255, 255, 255);                                /* #FFFFFF */
  
+   --ColorBrandAlpha: rgba(255, 32, 32, 0.5);   
    --ColorBlackAlpha: rgba(0, 0, 0, 0.5);    
    --ColorWhiteAlpha: rgba(255, 255, 255, 0.5);  
+
+   --Color000A08: rgba(0, 0, 0, 0.8);  
  
    --Color000: rgb(0, 0, 0);
    --Color016: rgb(16, 16, 16);

@@ -2,25 +2,28 @@
 
 
 .Section {
+  z-index: 100;
+  position: absolute; 
+  overflow: visible;
   width: 100%;
-  height: 100%;
 }
 
 .Container {
   max-width: var(--Size09);
   margin: 0 auto;
+  clear: both;
 }
 
-.Left {
+.Container .Left {
   float: left;
 }
 
-.Right {
+.Container .Right {
   float: right;
 }
 
-.Background.Color {
-  z-index: -100;
+.Background.Color,
+.Background.Shadow {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -28,17 +31,15 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background: var(--ColorWhite);
+}
+
+.Background.Color {
+  z-index: -100;
+  background: var(--Color032);
 }
 
 .Background.Shadow {
   z-index: -110;
   position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
   box-shadow: var(--Shadow);
 }

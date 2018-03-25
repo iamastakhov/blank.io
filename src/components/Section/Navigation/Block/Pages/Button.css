@@ -10,31 +10,35 @@
 }
 
 .Button .Title {
-  display: inline-block;
-  text-transform: uppercase;
   letter-spacing: 1px;
-  color: var(--ColorWhiteAlpha);
+  text-transform: uppercase;
 }
 
-.Button .Glyph {
-  display: inline-block;
+.Button .Glyph.Left {
   margin-right: 16px;
 }
 
-.Button:hover .Title {
+.Button .Title,
+.Button .Glyph {
+  display: inline-block;
+  color: var(--ColorWhiteAlpha);
+}
+
+.Button:hover .Title,
+.Button:hover .Glyph {
   color: var(--ColorWhite);
 }
 
-.ButtonActive .Title,
-.ButtonActive .Glyph {
-  color: var(--ColorBrand);
-}
-
-.ButtonActive:hover {
+.Button.Active:hover {
   cursor: default;
 }
 
-.ButtonActive:hover .Title,
-.ButtonActive .Glyph {
+.Button.Active .Title,
+.Button.Active .Glyph {
+  color: var(--ColorBrand);
+}
+
+.Button.Active:hover .Title,
+.Button.Active:hover .Glyph {
   color: var(--ColorBrand);
 }

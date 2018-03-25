@@ -18,7 +18,7 @@ render() {
 return (
 
 
-<div className={s.Section} id="Bio" >
+<div className={s.Section} id="bio" >
 <div className={s.Container}>
 
 

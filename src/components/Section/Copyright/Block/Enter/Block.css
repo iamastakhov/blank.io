@@ -20,11 +20,30 @@
   padding: 24px 16px;
 }
 
-.Button .Glyph {
+.Button .Title {
   display: inline-block;
-  color: var(--ColorBrand);
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
+.Button .Glyph {
+  display: inline-block;
+}
+
+.Button .Glyph.Left {
+  margin-right: 16px;
+}
+
+.Button .Glyph.Right {
+  margin-left: 16px;
+}
+
+.Button .Title,
+.Button .Glyph {
+  color: var(--ColorBrandAlpha);
+}
+
+.Button:hover .Title,
 .Button:hover .Glyph {
-  color: var(--ColorWhite);
+  color: var(--ColorBrand);
 }

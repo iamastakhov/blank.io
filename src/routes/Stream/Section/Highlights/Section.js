@@ -10,10 +10,11 @@ import carousel from 'pure-react-carousel/dist/react-carousel.es.css';
 import { Slider, Slide } from 'pure-react-carousel';
 
 
-import Highlight1 from './Block/Highlight1/Block';
-import Highlight2 from './Block/Highlight2/Block';
-import Highlight3 from './Block/Highlight3/Block';
-
+import FacebookPost from '../Templates/Block/FacebookPost/Block';
+import FacebookEvent from '../Templates/Block/FacebookEvent/Block';
+import FacebookImage from '../Templates/Block/FacebookImage/Block';
+import FacebookAlbum from '../Templates/Block/FacebookAlbum/Block';
+import FacebookVideo from '../Templates/Block/FacebookVideo/Block';
 
 import VideoUrl from './Video.mp4';
 import ImageUrl from './Image.jpg';
@@ -29,19 +30,18 @@ render() {
 return (
 
 
-<Slider className={s.Section}>
+<Slider className={s.Section} id="highlights">
 <Slide index={0}>
 <div className={s.Container}>
 
 
-    <Highlight1 />
+    <FacebookEvent />
 
 
 </div>
 
 
-    <div className={cx(s.Background, s.Overlay)} />
-    <video className={cx(s.Background, s.Video)} src={VideoUrl} type="video/mp4" loop autoPlay />
+    <div className={cx(s.Background, s.Color)} />
 
 
 </Slide>
@@ -50,16 +50,16 @@ return (
 <Slide index={1}>
 <div className={s.Container}>
 
-
-    <Highlight2 />
-    <Highlight3 />
-
+    <FacebookImage />
+    <FacebookPost />
+    <FacebookAlbum />
 
 </div>
 
 
     <div className={cx(s.Background, s.Overlay)} />
     <img className={cx(s.Background, s.Image)} src={ImageUrl} />
+    <div className={cx(s.Background, s.Color)} />
 
 
 </Slide>
@@ -69,12 +69,14 @@ return (
 <div className={s.Container}>
 
 
-    <Highlight3 />
+    <FacebookVideo />
 
 
 </div>
 
 
+    <div className={cx(s.Background, s.Overlay)} />
+    <video className={cx(s.Background, s.Video)} src={VideoUrl} type="video/mp4" loop autoPlay />
     <div className={cx(s.Background, s.Color)} />
 
 

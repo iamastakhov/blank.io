@@ -12,6 +12,12 @@
   padding: 8px 16px;
 }
 
+.List {
+  display: inline-block;
+  vertical-align: top;
+  text-align: right;
+}
+
 .Button {
   display: inline-block;
   width: auto;
@@ -20,20 +26,22 @@
   background: none;
 }
 
-.Item .Button {
-  padding: 8px 16px;
-}
-
 .Button .Title {
-  display: inline-block;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: var(--ColorWhiteAlpha);
 }
 
 .Button .Glyph {
-  display: inline-block;
+  color: var(--ColorWhiteAlpha);
+}
+
+.Button .Glyph.Right {
   margin-left: 16px;
+}
+
+.Button .Title,
+.Button .Glyph {
+  display: inline-block;
   color: var(--ColorWhiteAlpha);
 }
 
@@ -42,38 +50,13 @@
   color: var(--ColorWhite);
 }
 
-.Block:hover .Button .Title,
-.Block:hover .Button .Glyph {
-  color: var(--ColorWhite);
+.Button.Label .Title,
+.Button.Label .Glyph {
+  cursor: default;
+  color: var(--ColorWhiteAlpha);
 }
 
-.Menu {
-  position: absolute;
-  display: none;
-  margin: 0;
-  padding: 8px 0;
-  overflow: hidden;
-  border-radius: 4px;
-  box-shadow: none;
-  background: var(--ColorWhite);
-}
-
-.Block:hover .Menu {
-  display: block;
-  width: auto;
-}
-
-.Block:hover .Menu .Button {
-  padding: 16px 24px;
-  display: block;
-  text-transform: uppercase;
-}
-
-.Block:hover .Menu .Button .Title {
-  color: var(--ColorBlackAlpha);
-}
-
-.Block:hover .Menu .Button:hover .Title {
-  color: var(--ColorBlack);
+.Item .Button {
+  padding: 8px 16px;
 }
 
