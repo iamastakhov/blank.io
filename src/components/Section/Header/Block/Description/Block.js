@@ -8,7 +8,9 @@ class Block extends React.Component {
     return (
       <div className={s.Block}>
         <div className={s.Container}>
-          <h3 className={s.Headline}>test</h3>
+          <h3 className={s.Headline}>
+            Hello, my name's
+          </h3>
 
           <h2 className={s.Title}>Oleg Asko.</h2>
 
