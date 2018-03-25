@@ -23,7 +23,7 @@ const routes = {
     {
       path: '/contact',
       load: () => import(/* webpackChunkName: 'contact' */ './Contact'),
-    },    
+    },
 
     // Wildcard routes, e.g. { path: '(.*)', ... } (must go last)
     {
@@ -48,7 +48,7 @@ const routes = {
 if (__DEV__) {
   routes.children.unshift({
     path: '/error',
-    action: require('./error').default,
+    action: require('./Error').default,
   });
 }
 
