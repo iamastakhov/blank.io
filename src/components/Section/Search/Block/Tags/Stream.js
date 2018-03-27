@@ -30,202 +30,142 @@ return (
 
 
   <Button 
-    title="One" 
+    title="#animation" 
     to="/" 
   />
  
   <Button 
-    title="Two" 
+    title="#automotive" 
     to="/" 
   />
 
   <Button 
-    title="Three" 
+    title="#branding" 
     to="/" 
   />
 
   <Button 
-    title="Four" 
+    title="#cinematography" 
     to="/" 
   />
  
   <Button 
-    title="Five" 
+    title="#digital" 
     to="/" 
   />
 
   <Button 
-    title="Six" 
+    title="#event" 
     to="/" 
   />
 
   <Button 
-    title="Seven" 
+    title="#fashion" 
     to="/" 
   />
  
   <Button 
-    title="Eight" 
+    title="#game" 
     to="/" 
   />
 
   <Button 
-    title="Nine" 
+    title="#street" 
     to="/" 
   />
 
   <Button 
-    title="Ten" 
+    title="#php" 
     to="/" 
   />
 
   <Button 
-    title="One" 
+    title="#javascript" 
     to="/" 
   />
  
   <Button 
-    title="Two" 
+    title="#es6" 
     to="/" 
   />
 
   <Button 
-    title="Three" 
+    title="#html" 
     to="/" 
   />
 
   <Button 
-    title="Four" 
+    title="#jsx" 
     to="/" 
   />
  
   <Button 
-    title="Five" 
+    title="#npde" 
     to="/" 
   />
 
   <Button 
-    title="Six" 
+    title="#express" 
     to="/" 
   />
 
   <Button 
-    title="Seven" 
+    title="#webpack" 
     to="/" 
   />
  
   <Button 
-    title="Eight" 
+    title="#babel" 
     to="/" 
   />
 
   <Button 
-    title="Nine" 
+    title="#browsersync" 
     to="/" 
   />
 
   <Button 
-    title="Ten" 
+    title="#react" 
     to="/" 
   />
 
   <Button 
-    title="One" 
+    title="#redux" 
     to="/" 
   />
  
   <Button 
-    title="Two" 
+    title="#advertising" 
     to="/" 
   />
 
   <Button 
-    title="Three" 
+    title="#artdirection" 
     to="/" 
   />
 
   <Button 
-    title="Four" 
+    title="#copywriting" 
     to="/" 
   />
  
   <Button 
-    title="Five" 
+    title="#creativedirection" 
     to="/" 
   />
 
   <Button 
-    title="Six" 
+    title="#direction" 
     to="/" 
   />
 
   <Button 
-    title="Seven" 
+    title="#enterpreneurship" 
     to="/" 
   />
  
   <Button 
-    title="Eight" 
-    to="/" 
-  />
-
-  <Button 
-    title="Nine" 
-    to="/" 
-  />
-
-  <Button 
-    title="Ten" 
-    to="/" 
-  />
-
-  <Button 
-    title="One" 
-    to="/" 
-  />
- 
-  <Button 
-    title="Two" 
-    to="/" 
-  />
-
-  <Button 
-    title="Three" 
-    to="/" 
-  />
-
-  <Button 
-    title="Four" 
-    to="/" 
-  />
- 
-  <Button 
-    title="Five" 
-    to="/" 
-  />
-
-  <Button 
-    title="Six" 
-    to="/" 
-  />
-
-  <Button 
-    title="Seven" 
-    to="/" 
-  />
- 
-  <Button 
-    title="Eight" 
-    to="/" 
-  />
-
-  <Button 
-    title="Nine" 
-    to="/" 
-  />
-
-  <Button 
-    title="Ten" 
+    title="#productdesign" 
     to="/" 
   />
 

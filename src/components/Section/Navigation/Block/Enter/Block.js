@@ -20,7 +20,7 @@ return (
 
   <Link 
     className={cx(s.Button, s.Highlight)}
-    to="/login" 
+    to="/enter" 
   >
 
 

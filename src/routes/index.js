@@ -1,55 +1,91 @@
 /* eslint-disable global-require */
 
-// The top-level (parent) route
+
 const routes = {
+
+
   path: '',
-
-  // Keep in mind, routes are evaluated in order
   children: [
-    // The home route is added to client.js to make sure shared components are
-    // added to client.js as well and not repeated in individual each route chunk.
-    {
-      path: '',
-      load: () => import(/* webpackChunkName: 'intro' */ './Intro'),
-    },
-    {
-      path: '/stream',
-      load: () => import(/* webpackChunkName: 'stream' */ './Stream'),
-    },
-    {
-      path: '/store',
-      load: () => import(/* webpackChunkName: 'store' */ './Store'),
-    },
-    {
-      path: '/contact',
-      load: () => import(/* webpackChunkName: 'contact' */ './Contact'),
-    },
 
-    // Wildcard routes, e.g. { path: '(.*)', ... } (must go last)
-    {
-      path: '(.*)',
-      load: () => import(/* webpackChunkName: 'not-found' */ './NotFound'),
-    },
+
+  {
+    path: '',
+    load: () => import(/* webpackChunkName: 'intro' */ './Public/Intro'),
+  },
+
+  {
+    path: '/stream',
+    load: () => import(/* webpackChunkName: 'stream' */ './Public/Stream'),
+  },
+
+  {
+    path: '/store',
+    load: () => import(/* webpackChunkName: 'store' */ './Public/Store'),
+  },
+
+  {
+    path: '/contact',
+    load: () => import(/* webpackChunkName: 'contact' */ './Public/Contact'),
+  },
+
+  
+  {
+    path: '/enter',
+    load: () => import(/* webpackChunkName: 'enter' */ './Admin/Enter'),
+  },
+  {
+    path: '/admin',
+    load: () => import(/* webpackChunkName: 'dashboard' */ './Admin/Dashboard'),
+  },
+  {
+    path: '/admin/profile',
+    load: () => import(/* webpackChunkName: 'profile' */ './Admin/Profile'),
+  },
+  {
+    path: '/admin/settings',
+    load: () => import(/* webpackChunkName: 'settings' */ './Admin/Settings'),
+  },
+
+
+  {
+    path: '(.*)',
+    load: () => import(/* webpackChunkName: 'not-found' */ './System/NotFound'),
+  },
+
+
   ],
 
-  async action({ next }) {
-    // Execute each child route until one of them return the result
-    const route = await next();
 
-    // Provide default values for title, description etc.
-    route.title = `Oleg Ask. - ${route.title || 'Untitled Page'}`;
-    route.description = route.description || '';
+async action({ next }) {
+const route = await next();
 
-    return route;
-  },
-};
 
-// The error page is available by permanent url for development mode
+  route.title = `Oleg Ask. - ${route.title || 'Untitled Page'}`;
+  route.description = route.description || '';
+
+
+  return route;
+
+
+}, };
+
+
 if (__DEV__) {
-  routes.children.unshift({
+
+
+  routes.children.unshift(
+
+
+  {
     path: '/error',
-    action: require('./Error').default,
-  });
+    action: require('./System/Error').default,
+  }
+
+
+  );
+
+
 }
+
 
 export default routes;

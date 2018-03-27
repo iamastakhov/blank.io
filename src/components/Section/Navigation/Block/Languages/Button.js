@@ -32,7 +32,7 @@ return (
 
 Button.propTypes = {
   title: PropTypes.string.isRequired,
-  tp: PropTypes.string.isRequired,
+  to: PropTypes.string.isRequired,
 };
 
 

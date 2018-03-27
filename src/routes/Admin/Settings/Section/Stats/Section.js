@@ -1,11 +1,12 @@
 import React from 'react';
 
+import cx from 'classnames';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Section.css';
 
 import Pages from './Block/Pages/Block';
-import Languages from './Block/Languages/Block';
-import Enter from './Block/Enter/Block';
+import Collections from './Block/Collections/Block';
+import Materials from './Block/Materials/Block';
 
 
 class Section extends React.Component {
@@ -14,25 +15,22 @@ render() {
 return (
 
 
-<nav className={s.Section} id="navigation">
+<div className={s.Section} id="mail">
 <div className={s.Container}>
-<div className={s.Left}>
 
 
   <Pages/>
+  <Collections/>
+  <Materials/>
 
 
 </div>
-<div className={s.Right}>
 
 
-  <Languages/>
-  <Enter/>
+<div className={cx(s.Background, s.Color)} />
 
 
 </div>
-</div>
-</nav>
 
 
 ); } }

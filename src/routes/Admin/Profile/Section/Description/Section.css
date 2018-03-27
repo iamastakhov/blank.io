@@ -1,0 +1,32 @@
+@import '../../../../../components/variables.css';
+
+
+.Section {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+}
+
+.Container {
+  position: relative;
+  display: flex;
+  overflow: visible;
+  justify-content: left;
+  align-items: center;
+  text-align: center;
+  max-width: var(--Size09);
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 128px;
+}
+
+.Background.Color {
+  z-index: -100;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: var(--GradientDark);
+}
