@@ -10,22 +10,22 @@ const routes = {
 
   {
     path: '',
-    load: () => import(/* webpackChunkName: 'intro' */ './Public/Intro'),
+    load: () => import(/* webpackChunkName: 'intro' */ './Client/Intro'),
   },
 
   {
     path: '/stream',
-    load: () => import(/* webpackChunkName: 'stream' */ './Public/Stream'),
+    load: () => import(/* webpackChunkName: 'stream' */ './Client/Stream'),
   },
 
   {
     path: '/store',
-    load: () => import(/* webpackChunkName: 'store' */ './Public/Store'),
+    load: () => import(/* webpackChunkName: 'store' */ './Client/Store'),
   },
 
   {
     path: '/contact',
-    load: () => import(/* webpackChunkName: 'contact' */ './Public/Contact'),
+    load: () => import(/* webpackChunkName: 'contact' */ './Client/Contact'),
   },
 
   
