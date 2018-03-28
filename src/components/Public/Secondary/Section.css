@@ -1,0 +1,25 @@
+@import '../../variables.css';
+
+
+.Section {
+  z-index: 100;
+  position: relative;
+  overflow: visible;
+  width: 100%;
+  top: -80px;
+  margin-bottom: 0;
+}
+
+.Container {
+  max-width: var(--Size09);
+  margin: 0 auto;
+  clear: both;
+}
+
+.Container .Left {
+  float: left;
+}
+
+.Container .Right {
+  float: right;
+}

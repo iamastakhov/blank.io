@@ -1,0 +1,77 @@
+@import '../../../../variables.css';
+
+
+.Block {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.Container {
+  margin: 0;
+  padding: 8px 16px;
+}
+
+.Input {
+  cursor: text;
+  display: inline-block;
+  width: auto;
+  margin: 0;
+  padding: 0 16px;
+  background: none;
+}
+
+.Input .Title,
+.Input .Glyph {
+  display: inline-block;
+  padding: 24px 0;
+}
+
+.Input .Title {
+  min-width: auto;
+  font-weight: 100;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.Input .Glyph.Left {
+  margin-right: 16px;
+}
+
+.Input .Glyph.Right {
+  margin-left: 16px;
+}
+
+.Input .Title,
+.Input .Glyph {
+  color: var(--ColorBlackAlpha);
+}
+
+.Input:hover .Title,
+.Input:hover .Glyph {
+  color: var(--ColorBlack);
+}
+
+.Input .Title:focus {
+  color: var(--ColorBlack);
+}
+
+.Button {
+  display: inline-block;
+  width: auto;
+  margin: 0;
+  padding: 24px 16px;
+  background: none;
+}
+
+.Button .Glyph {
+  display: inline-block;
+}
+
+.Button .Glyph {
+  color: var(--ColorBlackAlpha);
+}
+
+.Button:hover .Glyph {
+  color: var(--ColorBlack);
+}
