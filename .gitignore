@@ -1,0 +1,16 @@
+build/
+node_modules/
+
+test/
+docs/
+
+yarn-debug.log*
+yarn-error.log*
+
+npm-debug.log*
+
+database.sqlite
+
+.idea
+
+.DS_Store

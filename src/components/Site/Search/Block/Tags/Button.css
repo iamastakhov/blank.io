@@ -1,0 +1,29 @@
+@import '../../../../variables.css';
+
+
+.Button {
+  display: inline-block;
+  width: auto;
+  margin: 0;
+  padding: 16px 24px;
+  text-transform: uppercase;
+  background: none;
+}
+
+.Button .Title {
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--ColorBlackAlpha);
+}
+
+.Button .Glyph {
+  display: inline-block;
+  margin-left: 16px;
+  color: var(--ColorBlackAlpha);
+}
+
+.Button:hover .Title,
+.Button:hover .Glyph {
+  color: var(--ColorBlack);
+}

@@ -1,0 +1,42 @@
+@import '../../../../variables.css';
+
+
+.Block {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.Container {
+  margin: 0;
+  padding: 8px 16px;
+}
+
+.List {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.Button {
+  display: block;
+  width: auto;
+  margin: 0;
+  padding: 8px 16px;
+  background: none;
+}
+
+.Button .Title {
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--ColorWhiteAlpha);
+}
+
+.Button .Glyph {
+  display: inline-block;
+  margin-right: 16px;
+}
+
+.Button:hover .Title {
+  color: var(--ColorWhite);
+}

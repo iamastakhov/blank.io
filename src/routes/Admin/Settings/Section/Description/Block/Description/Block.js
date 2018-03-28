@@ -17,7 +17,7 @@ return (
 
 
   <h3 className={s.Title}>
-    Dashboard & Activity
+    Site settings
   </h3>
 
 

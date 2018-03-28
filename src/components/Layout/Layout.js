@@ -5,9 +5,9 @@ import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import normalizeCss from 'normalize.css';
 import s from './Layout.css';
 
-import Navigation from '../Section/Navigation/Section';
-import Footer from '../Section/Footer/Section';
-import Copyright from '../Section/Copyright/Section';
+import Navigation from '../Site/Navigation/Section';
+import Footer from '../Site/Footer/Section';
+import Copyright from '../Site/Copyright/Section';
 
 
 class Layout extends React.Component {
