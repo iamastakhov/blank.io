@@ -20,7 +20,7 @@ return (
     to="services"
   >
   <span className={s.Title}>
-    Services
+    Section 1
   </span>
   </Scrollchor>
 
@@ -30,7 +30,7 @@ return (
     to="skills"
   >
   <span className={s.Title}>
-    Skills
+    Section 2
   </span>
   </Scrollchor>
 
@@ -40,7 +40,7 @@ return (
     to="bio"
   >
   <span className={s.Title}>
-    Bio
+    Section 3
   </span>
   </Scrollchor>
 
