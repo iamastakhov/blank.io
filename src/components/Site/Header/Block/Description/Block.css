@@ -19,8 +19,8 @@
   border-radius: 0;
 }
 
-.Headline,
 .Title,
+.Tagline,
 .Description {
   display: block;
   width: auto;
@@ -28,18 +28,17 @@
   padding: 24px;
 }
 
-.Headline {
-  padding-bottom: 0;
-  color: var(--ColorWhite);
+.Title {
+  padding-bottom: 16px;
+  color: rgb( var(--ClrBr) );
 }
 
-.Title {
+.Tagline {
   padding-top: 0;
-  padding-bottom: 16px;
-  color: var(--ColorBrand);
+  color: rgb( var(--ClrWh) );
 }
 
 .Description {
   padding-top: 0;
-  color: var(--ColorWhiteAlpha);
+  color: rgba( var(--ClrWh), 0.5 );
 }

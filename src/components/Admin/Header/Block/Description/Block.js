@@ -9,7 +9,7 @@ class Block extends React.Component {
       <div className={s.Block}>
         <div className={s.Container}>
           <h3 className={s.Headline}>
-            Hello, my name's
+            Hello, my name's23123
           </h3>
 
           <h2 className={s.Title}>Oleg Asko.</h2>

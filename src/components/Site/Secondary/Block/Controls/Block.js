@@ -37,7 +37,7 @@ return (
   >
   <FaDownload className={cx(s.Glyph, s.Left)} />
   <span className={s.Title}>
-    Download CV
+    Download White Papper
   </span>
   </a>
 

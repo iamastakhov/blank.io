@@ -60,7 +60,7 @@ async action({ next }) {
 const route = await next();
 
 
-  route.title = `Oleg Ask. - ${route.title || 'Untitled Page'}`;
+  route.title = `Blank — ${route.title || 'Untitled Page'}`;
   route.description = route.description || '';
 
 

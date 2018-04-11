@@ -4,8 +4,8 @@ import Sticky from 'react-stickynode';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Page.css';
 
-import Header from '../../../components/Section/Header/Section';
-import Secondary from '../../../components/Section/Secondary/Intro';
+import Header from '../../../components/Site/Header/Section';
+import Secondary from '../../../components/Site/Secondary/Intro';
 import Anchor from '../../../components/Section/Anchor/Section';
 
 import Services from './Section/Services/Section';

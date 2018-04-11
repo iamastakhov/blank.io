@@ -4,7 +4,7 @@ import Layout from '../../../components/Layout';
 import Intro from './Page';
 
 
-const title = 'Intro';
+const title = 'Introduction';
 
 function action() {
 

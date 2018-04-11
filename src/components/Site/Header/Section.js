@@ -8,7 +8,9 @@ import s from './Section.css';
 
 import Branding from './Block/Branding/Block';
 import Description from './Block/Description/Block';
-import VideoUrl from './Video.mp4';
+import BackgroundImageUrl from './Background.gif';
+/* import VideoUrl from './Video.mp4'; */
+
 
 
 class Section extends React.Component {
@@ -37,7 +39,9 @@ return (
 </div>
 
 
-<video className={cx(s.Background, s.Video)} src={VideoUrl} type="video/mp4" loop autoPlay />
+<div className={cx(s.Background, s.Overlay)} />
+{/* <video className={cx(s.Background, s.Video)} src={VideoUrl} type="video/mp4" loop autoPlay /> */}
+<img className={cx(s.Background, s.Image)} src={BackgroundImageUrl} type="video/mp4" loop autoPlay />
 <div className={cx(s.Background, s.Color)} />
 
 
